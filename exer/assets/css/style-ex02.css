@@ -1,0 +1,111 @@
+body{
+    /* Just zeroing out browser defaults */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Side bar that appears to the left of the window */
+.sidebar{
+    width: 10em;
+    height: 100vh;
+    margin-right: 2%;
+    background-image: url("../images/side.jpg");
+    background-repeat: repeat-y;
+    /* 
+    Forcing sidebar to stretch from the top
+    to the bottom of the window
+    */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.groups{
+    width: 60%;
+    margin-left: 10em;
+}
+
+
+/* Styling for flower groups */
+div.flowers{
+    display: inline-block;
+    width: 15em;
+    height: 15em;
+    margin: 1% 1% 3% 1%;
+    background-color: green;
+    border-radius: 10%;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    /* Color transition Only */
+    -webkit-transition: background-color 0.25s linear 0.1s;
+    -moz-transition: background-color 0.25s linear 0.1s;
+    -o-transition: background-color 0.25s linear 0.1s;
+    transition: background-color 0.25s linear 0.1s;
+    
+}
+
+div.flowers:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
+div.asterisks{
+    font-size: 120px;
+    color: yellowgreen;
+    text-shadow: 5px 5px yellow;
+    margin: 0%;
+    padding: 0%;
+    display: inline;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.flower_name{
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: none; /* Removing text shadow added from parent */
+    color: #B267C4;
+    display: inline;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+
+@media screen and (max-width: 350px){
+    /* Removes left border */
+    .sidebar{
+        display: none;
+    }
+    
+    div.flowers, .groups{
+        margin-left: 1%;
+    }
+    
+    div.flowers{
+        margin-bottom: 5%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    /* Changes groups to display vertically */
+    div.flowers{
+        display: block;
+    }
+}
+

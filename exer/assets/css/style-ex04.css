@@ -1,0 +1,135 @@
+/*
+    Author: Analia Mok
+    Created: February 16, 2017
+    Description: Exercise Four style sheet. The UI design
+        will match the same style used in previous exercises.
+*/
+
+html, body{
+    height: 100%;
+}
+
+main{
+    display: table-row;
+/*    width: 100%;*/
+    text-align: center;
+    background-color: #18B1F9;
+    padding: 2% 0 2% 0;
+}
+
+div#content_wrapper{
+    display: table-cell;
+    width: 90%; /* Need to fix */
+    height: 40%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.form_holder{
+    background-color: #FCFCFC;
+    width: 70%;
+    height: 80%;
+    margin: 2% auto;
+    padding: 1%;
+    position: relative;
+}
+
+h1, form label, form input, form fieldset{
+    font-family: Roboto, sans-serif;
+}
+
+/* Navigation Styling */
+
+nav{
+    display: table-row;
+    table-layout: fixed;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #383838;
+    padding: 0;
+}
+
+/* Zeroing out ul defaults */
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: table-cell;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: #FCFCFC;
+    font-weight: 400;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#logo{
+    height: 5%;
+    width: 5%;
+    vertical-align: middle;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: #FCFCFC;
+    font-weight: 400;
+    padding: 5%;
+}
+
+nav ul li a:hover{
+    background-color: #545454;
+}
+
+/* All form styling */
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form p{
+    margin-left: 5%;
+}
+
+form fieldset{
+    width: 80%;
+    margin: 0 auto;
+}
+
+form fieldset p{
+    text-align: left;
+}
+
+/* Submit Button Styling */
+form input[type="submit"]{
+    display: inline-block;
+    margin: 2.5% 0;
+    padding: 2% 3%;
+    background-color: #18B1F9;
+    color: #FCFCFC;
+    border: none;
+}
+
+form input[type="submit"]:hover{
+    background-color: #18DDF9;
+}
+
+@media screen and (min-width:768px){
+    /* Desktop Styling */
+    .form_holder{
+        width: 50%;
+    }
+    
+    form fieldset{
+        width: 50%;
+    }
+    
+}

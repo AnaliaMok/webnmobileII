@@ -1,0 +1,145 @@
+/* 
+Stylesheet will strongly resemble homepage css
+This sheet will eventually be transferred to homepage css
+*/
+html{
+    overflow-x: hidden;
+}
+
+body{
+    display: table;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header, footer{
+    height: 10%;
+    background-color: #2B2B2B;
+    display: table-row;
+    text-align: center;
+}
+
+footer{ 
+    text-align: left; 
+    font-size: 0.9em; /* Making footer information smaller */
+}
+
+/* Adjusting spacing ul in footer */
+#footer_list{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2% 0 0.5% 0.5%;
+    margin: 0 0 1% 1%;
+}
+
+header h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: #FCFCFC;
+    font-family: Oswald, sans-serif;
+    padding: 1%;
+}
+
+div#back_button{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 10;
+    opacity: 0.6;
+    padding: 0.5% 1%;
+    background-color: #2B2B2B;
+}
+
+div#back_button a, div#back_to_top_button a{
+    font-family: Roboto, sans-serif;
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+div#back_to_top_button{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 10;
+    padding: 0.5% 1%;
+    background-color: #2B2B2B;
+    opacity: 0.6;
+}
+
+main{
+    display: table-row;
+    width: 100%;
+    text-align: center;
+    background-color: #18B1F9;
+    padding: 2% 0 2% 0;
+}
+
+div#content_wrapper{
+    display: table-cell;
+    width: 90%; /* Need to fix */
+    margin: 0 auto;
+}
+
+h2, p, #footer_list li{
+    font-family: Roboto, sans-serif;
+    color: #FCFCFC;
+    /*text-align: left;*/
+}
+
+h2{
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+}
+
+p{ color: #2B2B2B; }
+
+p.def_content{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto 1% auto;
+    text-align: left;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0.5% auto 0 auto;
+}
+
+/* Don't show desk image */
+img#desk_img{ display: none; }
+
+div#sitemap_holder{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+object{
+    display: inline-block;
+    width: 100%;
+    height: 20em;
+    margin: 0.5% auto 0 auto;
+    overflow-y: hidden;
+}
+
+div#differences_content{
+    width: 90%;
+    margin: 0 auto 3% auto;
+    text-align: left;
+}
+
+@media screen and (min-width:768px){
+    /* Hide mobile image and show desktop image */
+    img#mobile_img{ display: none; }
+    img#desk_img{ display: inline-block; }
+    
+    p.def_content, div#differences_content{
+        width: 75%;
+    }
+    
+    object{
+        width: 60%;
+    }
+}

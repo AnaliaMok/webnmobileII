@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ISTE240 - Exercise Three</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-ex03.css"/>
+    <!-- Font Linking -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CRoboto" rel="stylesheet">
+</head>
+<body>
+    <!-- Button that will take you back to home page -->
+    <div id="back_button">
+        <a href="../index.html">Back to Homepage</a>
+    </div>
+    <header>
+        <h1 id="top">ANALIA'S ISTE-240 ASSIGNMENTS - EXERCISE THREE</h1>
+    </header>
+    
+    <main>
+        <div class="content_wrapper">
+            
+            <h2 style="margin-top:2%;">What is a User Navigation?</h2>
+            <p class="def_content">The user navigation - as entailed by the name - is meant to be easily usable for
+                any end user: in other words, it should be easily usable and should clearly
+                show users how to get to the information they need. For example, the navigation below allows
+                users of various OpenGL experience to immediately go to the sections they need.</p>
+            <img src="assets/images/opgl_nav__mob.png" alt="Navigation Image" id="mobile_img"/>
+            <img src="assets/images/opgl_nav_desk.PNG" alt="Navigation Image" id="desk_img"/>
+            
+            <h2>What is a Site Map?</h2>
+            <p class="def_content">Unlike a user navigation, a site map has a full listing of the URLs associated with a whole
+                website. It is a tool used by a website creator to tell a "search engine how to crawl his page" ("What" 2008)
+                :more specifically, what pages not too look at or what keywords to look for. Each URL is associated with
+                some set of metadata that a creator can either manipulate - as mentioned before - or to view. 
+                Metadata includes "latest update time, how often a URL [and its contents] change" ("What" 2008) and more: all
+                of which can be used by a search engine's web crawlers.
+            </p>
+            <div id="sitemap_holder">
+                <object data="sitemap.html">Site Map</object>
+            </div>
+            
+            <h2>What Are the Differences?</h2>
+            <div id="differences_content">
+                <p>At first glance, the sitemap directory structure looks very similar to that of the actual
+                    user navigation; however, this can only be said for most of the second directory level. There
+                    are two main directories that are either inaccessible by the user or are accessible - yet are 
+                    not part of the user navigation: an "assets" and an "uncategorized directory."
+                </p>
+                <p>Immediately, we can see that there is an "assets/faq_quaternions" directory that is inaccessible from the
+                    actual site. If one were to click the link in this directory, it will lead to a plain 
+                    html document - created in March 2002 - containing a list of contributions to the page
+                    and information about matrices, quaternions, and graphics programming using both structures.
+                    It is odd that information such as this is excluded from a tutorial site about graphics
+                    programing - yet is still accessible through the sitemap. Given the date of the last update,
+                    it can be assumed that the creator(s) of this site do not want to display outdated information
+                    yet still want to keep the page for archival reasons.
+                </p>
+                <p>In terms of the "uncategorized" directory, all the pages listed are accessible. The links are
+                    just listed in the lower half of the homepage under a "News" section. For the sake of an "update"
+                    section for users and a changelog for the creators, it is understandable as to why these links
+                    are not part of the user navigation. Plus, each link is buried in a directory structure that is
+                    obviously meant for archival purposes: the directories are named after years and possibly version
+                    numbers. These links also emphasize the difference between a sitemap and a user navigation: a 
+                    sitemap is meant for all urls of the entire website while the user navigation is meant just for 
+                    easy accessibility for the user. The user does not need access to all information in a given site.
+                </p>
+                <p>Overall, the sitemap for this tutorial site is not too different from the actual user navigation - despite
+                    the two main "hidden" directories. All pages accessible by the user navigation are shown on the sitemap; 
+                    granted, the links in the sitemap are in alphabetical order - which is mostly for the sake of the web crawler.
+                    Comparing the two, though, does show the obvious differences and reasons of what is and what is not shown
+                    to the user.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Button that will take you back to home page -->
+    <div id="back_to_top_button">
+        <a href="#top">Back to Top</a>
+    </div>
+    
+    <footer>
+        <ul id="footer_list">
+            <li>Created by Analia Mok</li>
+            <li>Last Updated February 11, 2017</li>
+            <li style="margin-top:0.5%;">Citations:</li>
+            <li>What are Sitemaps?. (2008, February 27). In sitemaps.org. Retrieved February 10, 2017.</li>
+        </ul>
+    </footer>
+</body>
+</html>

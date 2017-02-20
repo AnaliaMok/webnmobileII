@@ -1,0 +1,180 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: table;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin: 0;
+    text-align: center;
+}
+
+#header{
+    height: 10%;
+    background-color: #2B2B2B;
+    display: table-row;
+}
+
+#header h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: #FCFCFC;
+    font-family: Oswald, sans-serif;
+    padding: 1%;
+}
+
+/* MAIN div Styling */
+#main{
+    /*position: relative;*/
+    display: table-row;
+    height: 60%;
+    /*vertical-align: middle;*/
+    text-align: center;
+    /*padding: 10% 0;*/
+    background-color: #18B1F9;
+}
+
+/* Wrapper to help position the image and text */
+div#content_wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+}
+
+/* Profile Image Appearing in a Circle*/
+#main img{
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 2%;
+}
+
+/* "ABOUT ME" Text Section */
+#about{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+}
+
+#about h2{
+    font-weight: bold;
+    color: #FCFCFC;
+}
+
+#about p, #about p a{
+    color: #2B2B2B;
+}
+
+#about p a:hover{
+    color: white;
+}
+
+#about p a:active{
+    color: #BFBFBF;
+}
+
+
+/* Styling for Links Section */
+#links_sec{
+    min-height: 30%;
+    background-color: #FCFCFC;
+    display: table-row;
+}
+
+#links_sec h2{
+    font-family: Roboto, sans-serif;
+    color: #2B2B2B;
+}
+
+ul#project_links{
+    margin: 0 0.5% 0 0.5%;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul#project_links li{
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+}
+
+ul#project_links li a{
+    display: block;
+    text-decoration: none;
+    background-color: #18B1F9;
+    color: #FCFCFC;
+    box-shadow: 0.2em 0.2em 0.2em #888888;
+    font-family: Roboto, sans-serif;
+    font-size: 110%;
+    padding: 5%;
+}
+
+ul#project_links li a:hover{
+    background-color: #138DC6;
+}
+
+ul#project_links li a:active{
+    background-color: #BFBFBF;
+}
+
+/* Media Queries */
+
+
+/* Tablet size */
+@media only screen and (max-device-width:1024px){
+    
+    #about{
+        width: 40%;
+    }
+    
+    ul#project_links li{
+        display: block;
+        width: 90%;
+        margin: 3% auto;
+    }
+    
+    ul#project_links li a{
+        font-size: 120%;
+    }
+    
+}
+
+/* Phones */
+@media only screen and (max-device-width:425px){
+    
+    div#content_wrapper{
+        margin: 2%;
+        padding: 2% 0;
+    }
+    
+    #content_wrapper img{
+        margin: 2% 0;
+    }
+    
+    #about{
+        display: block;
+        width: 90%;
+        margin: 5% auto 0 auto;
+        text-align: center;
+        /*font-size: 110%;*/
+    }
+    
+    #links_sec{
+        margin-top: 3%;
+    }
+    
+    #links_sec h2, #links_sec ul li a{
+        font-size: 110%;
+    }
+    
+    
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ISTE240 - Exercise Four</title>
+    <!-- 
+        Author: Analia Mok
+        Created: February 16, 2017
+        Description: File contains a form that utilizes modern
+        style elements such as flat ui and flat ui colors.
+    -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-ex04.css"/>
+    <!-- Borrowing the base styling used in exercise one and three -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style-ex03.css"/>
+        <!-- Font Linking -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald%7CRoboto" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="top">ANALIA'S ISTE-240 ASSIGNMENTS - EXERCISE FOUR</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="logo"><img src="assets/images/survey_logo.png" alt="logo"/></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Professors</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content_wrapper">
+            <div class="form_holder">
+                <!--<img src="assets/images/survey_logo.png" alt="logo"/>-->
+                <h1>
+                    Web and Mobile II Survey
+                </h1>
+                <form action="#" method="get">
+                    <p>
+                        What section are your in?
+                        <input type="number" name="sec_num" min="1" max="2" value="1"/>
+                    </p>
+                    <p>
+                        When did you start the class?
+                        <input type="date" name="start"/>
+                    </p>
+                    <p>
+                        How would you rate this class?
+                        <input type="range" name="rate" min="0" max="10" list="rates"/>
+                        <datalist id="rates">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist>
+                    </p>
+
+                    <fieldset>
+                        <legend>How would you rate your professor?</legend>
+                        
+                        <p>
+                        <input type="radio" name="options" id="hate"/>
+                        <label for="hate">I hate him/her</label>
+                        </p>
+                        <p>
+                        <input type="radio" name="options" id="not_fan"/>
+                            <label for="not_fan">Not a fan</label></p>
+                        <p>
+                        <input type="radio" name="options" id="neutral"/>
+                            <label for="neutral">Ok...</label></p>
+                        <p>
+                        <input type="radio" name="options" id="like"/>
+                            <label for="like">I like him/her</label></p>
+                        <p>
+                        <input type="radio" name="options" id="awesome"/>
+                            <label for="awesome">He/She's Awesome!</label></p>
+                    </fieldset>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul id="footer_list">
+            <li>Created by Analia Mok</li>
+            <li>Last Updated February 19, 2017</li>
+        </ul>
+    </footer>
+</body>
+</html>
