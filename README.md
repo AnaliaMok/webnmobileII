@@ -7,7 +7,7 @@
 
 <h3>How to View</h3>
 <p>
-    This project is currently hosted on Rochester Institute of Technology's web servers - which cannot be connected to=
+    This project is currently hosted on Rochester Institute of Technology's web servers - which cannot be connected to
     unless the requesting device is on an RIT Internet connection: which is why this projected is placed into my GitHub 
     page. The website is self-contained: opening any of the HTML files in any browser should lead to a complete view of
     the page.
