@@ -6,67 +6,59 @@
 */
 
 html, body{
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
-main{
-    display: table-row;
-/*    width: 100%;*/
+div{
+    margin: 0;
     text-align: center;
-    background-color: #18B1F9;
-    padding: 2% 0 2% 0;
 }
 
-div#content_wrapper{
-    display: table-cell;
-    width: 90%; /* Need to fix */
-    height: 40%;
-    margin: 0 auto;
-    vertical-align: middle;
-}
-
-.form_holder{
-    background-color: #FCFCFC;
-    width: 70%;
-    height: 80%;
-    margin: 2% auto;
-    padding: 1%;
-    position: relative;
-}
-
-h1, form label, form input, form fieldset{
-    font-family: Roboto, sans-serif;
-}
-
-/* Navigation Styling */
-
-nav{
-    display: table-row;
-    table-layout: fixed;
+header{
+    background-color: #2B2B2B;
+    text-align: center;
     border-collapse: collapse;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #383838;
-    padding: 0;
 }
 
-/* Zeroing out ul defaults */
+header, nav{
+    position: relative;
+    top: 0;
+}
+
+header h1{
+    vertical-align: middle;
+    color: #FCFCFC;
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 1% 0.5%;
+}
+
+/* Nav Styling */
+nav{
+    background-color: #383838;
+    text-align: center;
+}
+
 nav ul{
     margin: 0;
-    padding: 0;
+    /* Want to zero out other padding */
+    padding: 0 0 0 1%;
+    list-style: none;
 }
 
 nav ul li{
-    display: table-cell;
-    list-style: none;
+    display: inline-block;
+    /*float: left;*/
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: Roboto, sans-serif;
     color: #FCFCFC;
     font-weight: 400;
-    vertical-align: middle;
-    height: 100%;
+    /*vertical-align: middle;*/
+    /*height: 100%;*/
 }
 
 #logo{
@@ -81,17 +73,46 @@ nav ul li a{
     font-family: Roboto, sans-serif;
     color: #FCFCFC;
     font-weight: 400;
-    padding: 5%;
+    text-align: center;
+    padding: 1em;
+
 }
 
 nav ul li a:hover{
     background-color: #545454;
 }
 
+main{
+/*    width: 100%;*/
+    text-align: center;
+    background-color: #18B1F9;
+    padding: 2% 0 2% 0;
+    margin: 0;
+}
+
+div#content_wrapper{
+    width: 90%; /* Need to fix */
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.form_holder{
+    background-color: #FCFCFC;
+    width: 90%;
+    height: 80%;
+    margin: 2% auto;
+    padding: 1%;
+    position: relative;
+}
+
+h1, form label, form input, form fieldset{
+    font-family: Roboto, sans-serif;
+}
+
 /* All form styling */
 
 form{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -122,10 +143,27 @@ form input[type="submit"]:hover{
     background-color: #18DDF9;
 }
 
+footer{ 
+    text-align: left; 
+    font-size: 0.9em; /* Making footer information smaller */
+    background-color: #2B2B2B;
+}
+
+/* Adjusting spacing ul in footer */
+#footer_list{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2% 0 0.5% 0.5%;
+    margin: 0 0 1% 1%;
+    font-family: Roboto, sans-serif;
+    color: #ECECEC;
+}
+
 @media screen and (min-width:768px){
     /* Desktop Styling */
     .form_holder{
         width: 50%;
+        padding: 1% 0.5% 0.5% 0.5%;
     }
     
     form fieldset{

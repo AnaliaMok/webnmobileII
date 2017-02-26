@@ -1,0 +1,23 @@
+/*
+    Author: Analia Mok
+    File Name: EX05.css
+    Created: February 22, 2017
+    Description: Stylesheet contains some basic styling
+    that will be applied to exercise five.
+*/
+
+body{
+    margin: 0;
+    padding: 1% 5% 5% 5%;
+    font-family: Arial, sans-serif;
+    background-color: #FCFCFC;
+}
+
+/* Targeting all input text fields */
+form input[type="text"]{
+    margin: 0.7% 0;
+}
+
+hr{
+    margin: 2% 0;
+}
