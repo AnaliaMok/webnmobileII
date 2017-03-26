@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Analia Mok -->
+    <!-- Submitted: March 9, 2017 -->
+    <!-- ISTE240 Exercise 6 - JavaScript Part 2 -->
+    
+    <meta charset=utf-8 />
+    <title>Analia Mok - Exercise Six</title>
+    <!-- 
+        Exercise 6 is a copy of exercise five's code
+        with add-ons for exercise six's tasks
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/css/EX06.css"/>
+    <script src="assets/js/EX06.js"></script>
+</head> 
+<body>
+    
+    <!-- Exercise 5 HTML -->
+    
+    <!-- 
+        Exercise 5a: Changes the color and size of paragraph
+        text when "Change Style" button is clicked
+        New Color: red
+        New Size: 2em
+    -->
+	<div>
+		<h2>JavaScript Exercise 5a </h2> 
+		<p id="text">This style of this paragraph will change when you click the button below.</p>
+	</div>
+	<div>
+		<button id="styleMe" onclick="jsStyle()">Change Style</button>
+	</div>
+    
+    <hr/>
+    
+    <!-- 
+        Exercise 5b: A Form that accepts a "first name"
+        and "last name" as text input. Whatever is 
+        inputted is displayed in an alert message.
+    -->
+    <h2>JavaScript Exercise 5b </h2> 
+    <form id="regForm">
+        First name: <input type="text" id="fname" value="Boo"><br>
+        Last name: <input type="text" id="lname" value="Radley"><br>
+        <input type="button" onclick="getFormValues();" value="Submit">
+    </form>
+    
+    <hr/>
+    
+    <!--
+        Exercise 5c/6c: When the button "Color Change"
+        is clicked, the background color of the div
+        will change accordingly.
+    -->
+    <div id="exer_five_c">
+        <h2>JavaScript Exercise 5c/6c</h2> 
+        <form>
+            <!-- Color Selection -->
+            <select id="mySelect">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+            </select>
+    <!--        <input type="button" onclick="getOptions()" value="Display the Options">-->         
+            <br/>
+            <input type="button" onclick="colorchanger()" value="Color Change"/>
+        </form>
+    </div>
+    <hr/>
+    
+    <!--
+        Exercise 5d/6d: Paragraph text will change color
+        based on what was selected in the above options.
+        Once occurs onhover. Will go back to initial 
+        state onmouseout.
+    -->
+    <div>
+		<h2>JavaScript Exercise 5d/6d </h2> 
+	</div>
+	<div>
+		<p id="rb" onmouseover="changeTextColor(this)" onmouseout="mouseToBlack(this)">This sentence will turn red when you mouseover it.</p>
+	</div>
+    
+    <hr/>
+    
+    <!--
+        Exercise 5e/6e: A form that accepts two
+        numbers and displays either the product or
+        the quotient inside the "result" span.
+    -->
+    <div>
+		<h2>JavaScript Exercise 5e/6e </h2> 
+	</div>
+	<form id="math_form">
+        <!-- User Inputs -->
+		<input type="text" id="firstoperand" placeholder="First Operand"/><br>
+		<input type="text" id="secondoperand" placeholder="Second Operand"/><br>
+        <!-- Operation Buttons -->
+		<input type="button" onclick="divide()" value="Divide" />
+		<input type="button" onclick="multiply()" value="Multiply" />
+		<p id="answer">The answer:</p>
+	</form>
+    
+    <hr/>
+    
+    <!-- Exercise 6 HTML -->
+    
+    <!--
+        Exercise 6a: Move the paragraph text 10px
+        to the right when user clicks the button
+        "Move the Text"
+    -->
+    <div>
+        <h2>JavaScript Exercise 6a</h2>
+    </div>
+    <div>
+        <span id="move_text">I Move</span>
+        <p><button id="move_text_btn" onclick="moveRightTen()">Move the Text</button></p>
+    </div>
+    
+    <hr/>
+    
+    <!-- 
+        Exercise 6b: A given form that will be used to
+        by howmany() to count the total number of inputs
+        inside the form and how many elements of type
+        "text" are present
+    -->
+    <div>
+        <p class="exerTitle">JavaScript Exercise 6b </p> 
+        <form id="regFormTwo">
+            <input type="text" id="fname_two" placeholder = "boo"><br>
+            <input type="text" id="lname_two" placeholder = "Radley"><br>
+            <input type="checkbox" id="dog_two">I have a dog. (Check if you do)<br>
+            <input type="text" id="major_two"  placeholder = "major"><br>		
+            <input type="button" onclick="howmany();" value="Count of inputs">
+        </form>
+    </div>
+    <hr/>
+    
+</body>
+</html>
