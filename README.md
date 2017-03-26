@@ -22,4 +22,4 @@
 
 <h3>Future Changes</h3>
 <p>Currently, the images found in project one are not compressed properly for fast mobile viewing.</p>
-<p>The project1 folder may not be clickable, so a self-contained zip folder is available for any of your viewing needs.</p>
+<p>The project1 folder may not be clickable, so a self-contained zip folder is available for any of your viewing needs. NOTE: Given that the images are not compressed, the zip folder could not be uploaded with the images. Opening project1's index page will result in you not seeing the nice images or image animations.</p>
