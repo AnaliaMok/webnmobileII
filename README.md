@@ -20,3 +20,6 @@
     <li>The navigation buttons for exercises will be placed into a hidden list that will only be 
      displayed once an "Exercise" button is hovered over.</li>
 </ul>
+
+<h3>Future Changes</h3>
+<p>Currently, the images found in project one are not compressed properly for fast mobile viewing.</p>
